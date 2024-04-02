@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TD2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var mavariable ="bonjour";
+    nom="adama";
+    prenom="dofara silue"
+    tableau=["salut", nom, prenom];
+    tableauAssociatif ={
+        "et1": ["SILUE", "Adama", 23],
+        "et2": ["Abdoul", "Konate", 18],
+        "et3": ["sista", "silue", 20]
+    };
+    console.log(tableau);
+    console.log(tableauAssociatif);
+    superjs = "Super JS ! .";
+    chaine = superjs.split(" ");
+    console.log(chaine);
+    console.log(chaine.join(" "));
+
+    // Numerique
+    annee=2023;
+    annee1=annee/4;
+    console.log(annee1);
+    console.log("resulatt division entiere:"+Math.floor(annee1));
+    //Booleen
+    chaine = "machaine";
+    booleen = true;
+    console.log(String(booleen));
+    console.log(Boolean(chaine));
+
+    //Listes
+    miam = ["🍖","🎂","🐟","🍕"];
+    miam.push("🥤"); //Ajout en derniere position
+    miam.unshift("🥭"); //Ajout d'un element en premier eposition
+    console.log(miam);
+    miam.pop(); //enlever le dernier element du tableau
+    miam.shift(); //enlever le premie element du tableau
+    console.log("Après avoir enleve le dernier et le premier element "+miam);
+
+    miam.splice(2,1, 2); // ajout de 2 à la position 2 et suppression de 1 element apres lui
+    console.log(miam);
+    miam.splice(2,1); //supprimer l'element à la position 1
+    console.log("apres suppression de element a pos 1 "+miam+" taille est"+miam.length);
+    
+    //concatener deux tableaux
+    console.log(tableau.concat(miam));
+    //boucle de parcour des tableaux
+    liste=[];
+    for(let i=0; i<miam.length; i++) {
+        liste.unshift(i);
+    }
+
+    for( let a of Object.entries(miam)){
+        console.log("salut",a);
+        
+    }
+    
+    var inventaire = {
+        "tete":"Casque des abysses",
+        "torse":"Armure frébile",
+        "jambes": "Sandales"
+    }
+    inventaire["parcours"]=["tal", "miage", "science co"];
+    console.log(inventaire);
+    for(const[clef,valeur] of Object.entries(inventaire)){
+        console.log("clé", clef, ":valeur", valeur);
+    }
+    console.log(Object.entries(inventaire));
+</script>
+</html>

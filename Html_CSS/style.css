@@ -1,0 +1,101 @@
+.nom{
+    font-style: italic;
+    font-size: 5em;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:underline;
+    text-decoration-color: blue;
+    text-align: center;
+}
+.prenom{
+    text-decoration: underline green;
+    opacity: 0.1;
+}
+
+.borders{
+    font-size: 5em;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0);
+}
+
+.p1{
+    background-color: red;
+    text-align: justify;
+    width: 500px;
+    padding: 40px;
+    /* margin: auto; */
+}
+.p2{
+    text-align: justify;
+    width: 500px;
+    background-color: blue;
+    padding: 30px;
+}
+
+.p3{
+    text-align: justify;
+    width: 500px;
+    background-color: yellow;
+    padding: 10px;
+}
+.p4{
+    color: white;
+    text-align: justify;
+    width: 500px;
+    background-color: black;
+    padding: 10px;
+}
+
+.paragraphe{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;   /* aligner les element du div sur l'axe sécondaire */
+}
+
+.box{
+    height: 150px;
+}
+.conteneur{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;   
+    grid-template-rows: 150px 100px 50px;
+    gap: 10px;
+}
+
+.conteneur1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-gap: 10px;
+
+}
+
+.une{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.deux {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.cinq{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.six{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.huit{
+    grid-column: 1/4;
+}
+
+.box{
+    border: 1px solid;
+}
+
+

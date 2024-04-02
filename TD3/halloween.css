@@ -1,0 +1,165 @@
+body{
+	background-color: black;
+}
+#niveau{
+	margin:12px auto 12px 0 ;
+}
+#menu{
+	display: flex;
+	color: white;
+	justify-content: flex-end;
+
+}
+#menu input[type="button"]:hover{
+	background-color: #45a049;
+	color: white;
+
+}
+#menu input[type="button"]:active{
+	animation: buttonAnimations 0.1s ease;
+}
+
+#score{
+	color:red; 
+	font-size: 5em;
+	/* display: flex; 
+	flex-direction: row-reverse; */
+}
+
+@keyframes buttonAnimations{
+	0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+.pumpkin{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	animation: animer .5s alternate;
+}
+
+@keyframes animer{
+	from {    
+        opacity: 1;
+        transform: rotate(45deg) scale(2);
+    }
+    to {
+    	opacity: 0.4;
+    }
+}
+
+.pumpkin > *{
+	background-color: #F26B0F;
+	position: absolute;
+}
+
+.stem{
+	background-color: brown;
+	width: 20px;
+	height: 30px;
+	left: 140px;
+	top: 25px;
+	border-radius: 5px;
+}
+
+.left-pumpkin, .right-pumpkin{
+	width: 150px;
+	height: 200px;
+	top: 50px;
+	border-radius: 150px / 200px;
+}
+
+.left-pumpkin{
+	left: 20px;
+}
+
+.middle-pumpkin{
+	left: 100px;
+	top: 45px;
+	width: 100px;
+	height: 210px;
+	border-radius: 30px;
+}
+
+.right-pumpkin{
+	left: 130px;
+}
+
+.mouth{
+	background-color: black;
+	left: 60px;
+	top: 135px;
+	width: 180px;
+	height: 100px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.lip{
+	left: 60px;
+	top: 95px;
+	width: 180px;
+	height: 80px;
+	border-radius: 600px / 300px;
+}
+
+.tooth{
+	width: 30px;
+	height: 30px;
+}
+
+.t1{
+	left:  135px;
+	top:  165px;
+}
+
+.t2{
+	left:  110px;
+	top:  210px;	
+}
+
+.t3{
+	left:  160px;
+	top:  210px;	
+}
+
+.eye{
+	background-color: black;
+	width: 60px;
+	height: 30px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	top: 125px;
+}
+
+.e1{
+	left: 70px;
+	transform: rotate(25deg); 
+}
+
+.e2{
+	left: 170px;
+	transform: rotate(-25deg); 
+}
+
+.nose{
+	left: 133px;
+	top: 135px;
+	height: 0px;
+	width: 0px;
+	border-right : 17px solid transparent;
+	border-bottom : 30px solid black;
+	border-left : 17px solid transparent;
+}
+
+.game{
+	position: absolute;
+	top: 70%;
+	left: 25%;
+	color: red;
+	font-size: 9em;
+}
+
+
